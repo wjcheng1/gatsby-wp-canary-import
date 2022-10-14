@@ -5,6 +5,7 @@ on: deployment
 jobs:
   trigger_e2e_tests:
     name: Trigger end-to-end tests
+    runs-on: ubuntu-latest
     steps:
       - name: Trigger CircleCI Pipeline
         run: |
