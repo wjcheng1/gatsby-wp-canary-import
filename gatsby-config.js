@@ -37,7 +37,7 @@ if (process.env.PANTHEON_ENVIRONMENT_URL) {
 		process.env.IS_LIVE_ENVIRONMENT = true
 	}
 }
-
+console.log('is live? ', process.env.IS_LIVE_ENVIRONMENT)
 module.exports = {
 	...(injectedOptions && injectedOptions),
 	/**
